@@ -1,0 +1,21 @@
+{
+  "name": "ShortenAmazonURL",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "description": "Copy the shortened URL of Amazon.",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "permissions": [
+    "clipboardWrite",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.amazon.com/",
+    "https://www.amazon.co.jp/"
+  ]
+}
